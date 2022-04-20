@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700;900&display=swap'); 
+@mixin display-style ($direction, $justify, $align) {
+    display: flex;
+    direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin font-style ($color, $weight, $align) {
+    font-family: 'Commissioner', sans-serif;
+    color: $color;    
+    font-weight: $weight;
+    text-align: $align;
+}
+
+@mixin modal-style ($position, $top, $left, $width) {
+    transform: translate(-$top, -$left);
+    position: $position;
+    top: $top;
+    left: $left;
+    width: $width;
+}
+
+@mixin font-weight {
+    $font-weight:400;
+    $font-weight-bolder: 500;
+    $font-weight-bolder: 700;
+}
+
+// stlying variables 
+$Moderate-cyan: hsl(176, 50%, 47%);
+$Dark-cyan: hsl(176, 72%, 28%);
+$Black: hsl(0, 0%, 0%);
+$Dark-gray: hsl(0, 0%, 48%);
+
+html, body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #ffff;
+}
+
+ol, ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+main{
+    display: block;    
+    width: 100%;
+    z-index: 2;
+}
+
+

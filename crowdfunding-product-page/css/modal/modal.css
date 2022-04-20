@@ -1,0 +1,376 @@
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700;900&display=swap");
+html, body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #ffff;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  display: block;
+  width: 100%;
+  z-index: 2;
+}
+
+.total_layer {
+  display: block;
+  position: fixed;
+  top: 0;
+  min-height: 100%;
+  width: 100%;
+  background-color: transparent;
+  -webkit-transition: 1s;
+  transition: 1s;
+  z-index: -4;
+}
+
+.total_layer.show {
+  background-color: rgba(31, 29, 29, 0.426);
+  z-index: 3;
+}
+
+.modal_snap.show {
+  -webkit-transform: translate(-50%, 10%);
+          transform: translate(-50%, 10%);
+  opacity: 1;
+  z-index: 4;
+}
+
+.modal_snap {
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Commissioner', sans-serif;
+  color: #000;
+  font-weight: 800;
+  text-align: left;
+  display: block;
+  max-width: 700px;
+  background-color: white;
+  padding: 1.5em;
+  opacity: 0;
+  z-index: -4;
+  -webkit-transform: translate(-50%, -30%);
+          transform: translate(-50%, -30%);
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+  border-radius: 1rem;
+}
+
+.modal_snap .modal_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.modal_snap .modal_header h2 {
+  width: 70%;
+  font-size: 1.5em;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-right: 3rem;
+}
+
+.modal_snap .modal_header button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 15%;
+  background-color: transparent;
+  border: none;
+}
+
+.modal_snap p {
+  font-family: 'Commissioner', sans-serif;
+  color: #918e8e;
+  font-weight: 500;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  margin-left: 2rem;
+  line-height: 1.5rem;
+  font-size: 1rem;
+}
+
+.modal_snap .modal_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Commissioner', sans-serif;
+  color: #000;
+  font-weight: 600;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 1rem;
+  margin: 2rem auto;
+  margin-top: 1em;
+  border: 1px solid rgba(128, 128, 128, 0.479);
+}
+
+.modal_snap .modal_inner:active {
+  border: 1px solid rgba(128, 128, 128, 0.479);
+}
+
+.modal_snap .modal_inner .content_input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  display: flex;
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+}
+
+.modal_snap .modal_inner .content_input input[type="radio"] {
+  position: relative;
+  height: 25px;
+  width: 25px;
+  margin-top: 0.8rem;
+  margin-right: 1em;
+}
+
+.modal_snap .modal_inner .content_input span {
+  line-height: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 1rem;
+  width: 100%;
+  font-size: 15px;
+  font-weight: 600;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  text-align: left;
+}
+
+.modal_snap .modal_inner .content_input span .text_lighter a {
+  margin-left: -1rem;
+  font-size: 15px;
+  font-weight: bold;
+  color: #3cb4ac;
+  width: 100%;
+}
+
+.modal_snap .modal_inner h4 {
+  margin-left: -10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.modal_snap .modal_inner h4 span {
+  color: #7a7a7a;
+  margin-left: 0.3rem;
+  font-size: 15px;
+}
+
+.modal_snap .modal_inner p {
+  width: 85%;
+  line-height: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  cursor: pointer;
+}
+
+.modal_snap .modal_inner .user-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+  margin-top: 0.1rem;
+  line-height: 4em;
+  min-width: 100%;
+  height: 20vh;
+  background-color: transparent;
+  border-radius: 25px;
+  border-style: none !important;
+}
+
+.modal_snap .modal_inner .user-box hr {
+  width: 100%;
+  color: rgba(251, 251, 251, 0.479);
+}
+
+.modal_snap .modal_inner .user-box label {
+  color: rgba(123, 123, 123, 0.479);
+}
+
+.modal_snap .modal_inner .user-box div {
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.modal_snap .modal_inner .user-box div input {
+  width: 35%;
+  height: 6.2vh;
+  border-radius: 150px;
+  border: 1px solid #c4c4c4;
+  text-align: center;
+}
+
+.modal_snap .modal_inner .user-box div button {
+  width: 35%;
+  padding: 1.2em;
+  border: none;
+  border-radius: 150px;
+  background-color: #3cb4ac;
+  margin-left: 0.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.modal_snap .modal_inner.display_pledge hr {
+  display: block;
+}
+
+.modal_snap .modal_inner.display_pledge h3 {
+  display: block;
+}
+
+.modal_snap .modal_inner.display_pledge .enter_pledge {
+  display: none;
+}
+
+.dis {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: block;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: 4em;
+  background: #806b6b;
+}
+
+.dis hr {
+  width: 100%;
+  color: rgba(181, 181, 181, 0.479);
+}
+
+.dis label {
+  color: rgba(123, 123, 123, 0.479);
+}
+
+.dis div {
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.dis div input {
+  width: 45%;
+  height: 6.2vh;
+  border-radius: 150px;
+  border: 1px solid #c6c6c6;
+  text-align: center;
+}
+
+.dis div button {
+  width: 45%;
+  padding: 1.2em;
+  border: none;
+  border-radius: 150px;
+  background-color: #3cb4ac;
+  margin-left: 0.5rem;
+}
+/*# sourceMappingURL=modal.css.map */

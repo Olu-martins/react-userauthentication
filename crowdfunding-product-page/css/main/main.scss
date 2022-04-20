@@ -1,0 +1,180 @@
+@import "../../css/general.scss";
+@import "../../../crowdfunding-product-page/include-media-master/dist/include-media";
+
+.content_section {  
+    @include display-style (column, center, center);  
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 700px;
+    margin: auto;
+    padding: 1.5em;
+    margin-top: -4em;
+    margin-bottom: 1.5rem;
+    border-radius: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 0.3em rgba(78, 77, 77, 0.243);  
+
+    & > img{
+        margin-top: -2.5em;
+    }
+    h1{
+        @include font-style(#000, 700, center);
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    p{
+        @include font-style(#777777, 400, center);
+        display: block;
+        line-height: 1.5em;
+        width: 100%;
+    }
+    .mark_btn{
+      @include display-style(row, center, center);
+      gap: 1em;
+      width: 100%;
+      button{
+        @include display-style(row, center, center);
+        border-radius: 4rem;
+        border: none;
+        &:first-child{
+          @include font-style(#fff, bold, left);
+          padding: 1.5em;
+          width: 70%;
+          font-size: 0.8rem;
+          background-color: $Moderate-cyan;
+        }
+        &:last-child{
+          width: auto;
+          background-color: transparent;
+          span{
+            display: none;
+          }
+
+        }
+      }
+    }
+    &.original_content {
+      margin-top: 0;
+      .backers_value{
+        @include  font-style(#000, bolder, center);
+        @include display-style(column, center, center);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        h1{
+          @include  font-style(#000, bolder, center);
+          display: block;
+          width: 100%;
+          // span{
+          //   @include font-style(rgb(191, 191, 191), bold, center);
+          //   font-size: 0.86rem;
+          //   font-weight: 500;
+          //   display: block;
+          //   width: 100%;
+          //   padding-top: 0.5em;
+          // }
+        }
+        hr{
+          width: 30%;
+          background-color: transparent;
+          border: none;
+          border-top: 0.5px solid rgb(209, 204, 204);
+        }
+      }    
+      h2{
+        @include  font-style(#000, bolder, center);
+        display: block;
+        width: 100%;
+        span{
+          @include font-style(rgb(191, 191, 191), bold, center);
+          font-size: 0.86rem;
+          font-weight: 500;
+          display: block;
+          width: 100%;
+          padding-top: 0.5em;
+        }
+      }  
+      
+      .progress_bar{
+        width: 90%;
+        background-color: rgb(248, 248, 248);
+        border-radius: 3rem;
+        position: relative;
+        height: 1rem;
+        margin: auto;
+      }
+      .progress_bar::before{
+        content: "";
+        position: absolute;
+        width: 75%;
+        height: 1rem;
+        background-color: $Moderate-cyan;
+        border-radius: 3rem;
+      }      
+    }
+    &.about{
+      h2, p{
+        text-align: left;
+        line-height: 1.5em;
+      }
+     
+      .about_inner{
+        @include display-style(column, center, center );
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        margin: 1em;
+        padding: 1em;
+        border: 1px solid rgba(66, 62, 62, 0.337);
+        border-radius: 1rem; 
+        h2{                             
+          width: 100%;                  
+          font-size: 0.8rem;
+
+          @include media('<=phone'){
+            span{
+              margin-top: -1.55rem;
+              color: $Moderate-cyan;
+              font-size: 56px;
+              
+            }   
+          }
+          
+
+        }        
+        .reward{
+          @include display-style(column, flex-start, center);
+          display: flex;  
+          flex-wrap: wrap;
+          width: 100%;            
+          h4{
+            @include display-style(row, flex-start, center);
+            @include font-style($Black, bold, center);           
+            font-size: 25px;            
+            width: 70%;
+            margin: 0.1em;            
+            span{
+              color: rgb(84, 82, 82);
+              padding-left: 0.5rem;
+              font-size: 1rem;              
+            }
+          }
+          button{
+            @include font-style(#fff, 500, center);    
+              padding: 1.5em;
+              text-align: center;
+              margin-top: 1em;
+              width: 80%;
+              height: 3.3rem;
+              border-radius: 30px;
+              background-color: $Moderate-cyan;            
+              border: none;
+          }
+          }           
+        }               
+    }
+
+}

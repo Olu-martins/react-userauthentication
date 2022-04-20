@@ -1,0 +1,228 @@
+@import "../general.scss";
+@import "../../../crowdfunding-product-page/include-media-master/dist/include-media";
+
+// header
+header{
+    display: flex;
+    flex-direction: row;    
+    background-image: url(../../assets/img/image-hero-desktop.jpg);
+    min-height: 60vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    h1{
+        width: 70%;
+        margin: 1em;
+        margin-left: 7rem;
+    }
+    .hamburger{
+        display: none;
+    }
+    ul{
+        display: flex;
+        flex-direction: row;
+        max-width: 200px;
+        margin: 0 auto;                
+        margin-top: 2em;
+        justify-content: flex-end;
+        align-items: flex-start;
+        background-color: transparent;
+        box-shadow: none;
+        position: inherit;
+        transform: translate(0, 0);
+        li{            
+            border: none;                              
+            padding: 0;
+            margin: 0;
+            color:#fff;                                
+            font-weight: 500;
+            cursor: pointer;
+            &:hover{
+                font-weight: 600;
+            }        
+        }
+    }
+
+}
+
+
+// main
+.content_section{
+    // img{
+    //     margin-top: -3rem;
+    // }
+    .mark_btn{
+        width: 110%;
+        #open_modal{
+            justify-content: center;
+        }
+        button{
+            justify-content: flex-start;
+            position: relative;
+            cursor: pointer;
+            padding: 0;
+            &:hover{
+                background-color: $Dark-cyan;
+            }
+            &:first-child{
+                width: 25%;
+                left: -20%;
+            }
+            &:last-child{
+                width:20%;
+                right:-20%;
+                background-color: rgb(255, 255, 255);
+                span{
+                    @include font-style($Moderate-cyan, 600, center);
+                     display: block;
+                     margin-left: -10px;
+                     text-align: center;
+                     justify-content: center;
+                     cursor: pointer;
+                     width: 100%;
+                     padding-top: 0.8rem;
+                     height: 2rem;
+                     border-radius: 20px;
+                     color: black;
+                     position:relative ;
+                     background-color: rgb(231, 231, 231);                     
+                }                
+            }
+        } 
+    }
+    &.original_content{
+        .backers_value{
+            display: flex;
+            flex-direction: row;            
+            // div{
+            //     span{
+            //         display: flex;
+            //     }
+            // }
+            hr{
+                width:0.5px;
+                height:50px;                        
+                border-top: none;
+                border-left: 0.3px solid rgba(202, 190, 190, 0.692);
+            }
+        }
+        
+    }
+    &.about{
+        .about_inner{
+            width: 94%;
+            h2{ 
+                width: 100%;
+                display: inline;
+                color:black;
+                font-weight: 800;
+                span{
+                    color: $Moderate-cyan;
+                    font-weight: 700;
+                    margin-top: -2rem;
+                    // float: right;
+                    text-align: right;
+
+                }
+            }
+            .reward{
+                display: flex;
+                flex-direction: row;
+                h4{
+                    width: 65%;
+                    text-align: left;
+                }
+                button{
+                    width: 25%;
+                    margin-left: 4.56em;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: $Dark-cyan;
+                    }
+                }
+            }
+        }
+    }
+
+}
+// modal
+.modal_snap{
+    .modal_header{
+        button{
+            cursor: pointer;
+        }
+    }
+    p{
+        font-size: 1rem;
+    }
+    .modal_inner{
+        position: relative;
+        .content_input{
+            
+            span{
+                display: flex;
+                flex-direction: row;
+                // width: 100%;
+                .text_lighter{
+                    // color: rgb(247, 223, 223);
+                    font-size: 1rem;
+                    padding-left: 3em;
+                    font-weight: bold;
+                }
+                #pledge-left{
+                    color: $Dark-cyan;
+                    font-size: 1rem;
+                    font-size: 1rem;
+                    padding-left: 3em;
+                    font-weight: bold;                    
+                    font-weight: bold;                                                        
+                }
+            }
+
+        }
+        h4{
+            width: auto;
+            position: absolute;
+            left: 90%;
+            top: -1.2em;
+            left: 31em;
+        }
+        h3{
+           display: none; 
+        }
+        .enter_pledge{
+            width: 90%;
+            h3{
+                display: block;
+                width: 60%;
+                text-align: left;
+            }
+            label{
+                width: 20%;
+                span{
+                    left: 1.5vw;
+                }
+                input[type = "text"]{
+                    width: 80%;
+                }
+            }
+            button{
+                width: 20%;                
+                cursor: pointer;
+                &:hover{
+                    background-color: $Dark-cyan;
+                }
+            }
+        }
+
+    }
+    .modal_inner.display_pledge{
+        h3{
+            display: none;           
+        }
+        .enter_pledge h3{
+            display: block;       
+        }
+    }           
+
+}

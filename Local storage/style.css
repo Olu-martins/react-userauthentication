@@ -1,0 +1,23 @@
+
+.main{
+    display: flex;
+}
+.section{
+    width: 40%;
+    margin:20px 0px 10px 0px;        
+    padding: 1rem;
+    border: 0.5px solid rgb(204, 202, 202);    
+}
+
+/* form{
+    margin: -10px 0px 0px 0px;
+} */
+
+.userDetails{
+
+    background: rgb(253, 253, 253);
+    width: 30%;
+    max-width: 100%;
+    margin: 250px 0px 0px 20px;
+
+}

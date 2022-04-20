@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <link rel="stylesheet" href="style.css">
+    <title>Staff Registration</title>
+</head>
+<body>
+    <div class="main">    
+    <section class="section column is-offset-one-quarter">        
+        <div class="columns is-offset-one-quarter">  <!-- column is-half -->
+            <div class="column ">                
+                    <form class="regForm" action="">
+                        <div class="field">
+                            <label class="label">Name</label>
+                            <div class="control">
+                              <input class="input" type="text" placeholder="e.g Alex Smith" name="name">
+                            </div>
+                          </div>   
+                        <div class="field">
+                            <label class="label">Gender</label>
+                            <div class="control">
+                              <input class="input" type="text" placeholder="e.g Male" name="gender">
+                            </div>
+                        </div> 
+                        <div class="field">
+                            <label class="label">Address</label>
+                            <div class="control">
+                              <input class="input" type="text" placeholder="House or contact address" name="address">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Phone Number</label>
+                            <div class="field-label"></div>
+                            <div class="field-body">
+                              <div class="field is-expanded">
+                                <div class="field has-addons">
+                                  <p class="control">
+                                    <a class="button is-static">
+                                      +234
+                                    </a>
+                                  </p>
+                                  <p class="control is-expanded">
+                                    <input class="input" type="tel" placeholder="813452675" name="phone">
+                                  </p>
+                                </div>
+                                <p class="help">Do not enter the first zero</p>
+                              </div>
+                            </div>
+                          </div>                                                               
+                        <div class="field">
+                            <label class="label">Email</label>
+                            <p class="control has-icons-left has-icons-right">
+                              <input class="input" type="email" placeholder="example@gmail.com" name="email">
+                              <span class="icon is-small is-left">
+                                <i class="fas fa-envelope"></i>
+                              </span>
+                              <span class="icon is-small is-right">
+                                <i class="fas fa-check"></i>
+                              </span>
+                            </p>
+                          </div>
+                          <div class="field">
+                            <label class="label">Create Password</label>
+                            <p class="control has-icons-left">
+                              <input class="input" type="password" placeholder="Password" name="password">
+                              <span class="icon is-small is-left">
+                                <i class="fas fa-lock"></i>
+                              </span>
+                            </p>
+                          </div>            
+                          <div class="field">
+                            <label class="label">Confirm Password</label>
+                            <p class="control has-icons-left">
+                              <input class="input" type="password" placeholder="Password" name="checkPassword">
+                              <span class="icon is-small is-left">
+                                <i class="fas fa-lock"></i>
+                              </span>
+                            </p>
+                          </div>                                                 
+                          <div class="field">
+                            <div class="control">
+                              <label class="checkbox">
+                                <input type="checkbox">
+                                I agree to the <a href="#">terms and conditions</a>
+                              </label>
+                            </div>
+                          </div>                                                  
+                          <div class="field is-grouped">
+                            <div class="control">                                                            
+                              <button class="button is-link button is-fullwidth">Create Account</button>
+                            </div>                           
+                          </div>
+                    </form>                                    
+            </div>
+        </div>
+    </section>
+    <section class="userDetails"></section>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+
+
+$message : lightgreen;
+
+
+nav{
+    background: lightblue;
+    ul{
+        
+        li{
+            list-style: none;
+            display: inline-block;
+        &:hover{
+            background: red;
+        }  
+        }
+    }
+}
+
+
+p{
+    color: $message;
+}

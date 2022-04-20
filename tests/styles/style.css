@@ -1,0 +1,17 @@
+nav {
+  background: lightblue;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+nav ul li:hover {
+  background: red;
+}
+
+p {
+  color: lightgreen;
+}
+/*# sourceMappingURL=style.css.map */

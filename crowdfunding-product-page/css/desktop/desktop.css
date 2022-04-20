@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700;900&display=swap");
+html, body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #ffff;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  display: block;
+  width: 100%;
+  z-index: 2;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-image: url(../../assets/img/image-hero-desktop.jpg);
+  min-height: 60vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header h1 {
+  width: 70%;
+  margin: 1em;
+  margin-left: 7rem;
+}
+
+header .hamburger {
+  display: none;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  max-width: 200px;
+  margin: 0 auto;
+  margin-top: 2em;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  position: inherit;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+header ul li {
+  border: none;
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+header ul li:hover {
+  font-weight: 600;
+}
+
+.content_section .mark_btn {
+  width: 110%;
+}
+
+.content_section .mark_btn #open_modal {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.content_section .mark_btn button {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  position: relative;
+  cursor: pointer;
+  padding: 0;
+}
+
+.content_section .mark_btn button:hover {
+  background-color: #147b74;
+}
+
+.content_section .mark_btn button:first-child {
+  width: 25%;
+  left: -20%;
+}
+
+.content_section .mark_btn button:last-child {
+  width: 20%;
+  right: -20%;
+  background-color: white;
+}
+
+.content_section .mark_btn button:last-child span {
+  font-family: 'Commissioner', sans-serif;
+  color: #3cb4ac;
+  font-weight: 600;
+  text-align: center;
+  display: block;
+  margin-left: -10px;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  width: 100%;
+  padding-top: 0.8rem;
+  height: 2rem;
+  border-radius: 20px;
+  color: black;
+  position: relative;
+  background-color: #e7e7e7;
+}
+
+.content_section.original_content .backers_value {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.content_section.original_content .backers_value hr {
+  width: 0.5px;
+  height: 50px;
+  border-top: none;
+  border-left: 0.3px solid rgba(202, 190, 190, 0.692);
+}
+
+.content_section.about .about_inner {
+  width: 94%;
+}
+
+.content_section.about .about_inner h2 {
+  width: 100%;
+  display: inline;
+  color: black;
+  font-weight: 800;
+}
+
+.content_section.about .about_inner h2 span {
+  color: #3cb4ac;
+  font-weight: 700;
+  margin-top: -2rem;
+  text-align: right;
+}
+
+.content_section.about .about_inner .reward {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.content_section.about .about_inner .reward h4 {
+  width: 65%;
+  text-align: left;
+}
+
+.content_section.about .about_inner .reward button {
+  width: 25%;
+  margin-left: 4.56em;
+  cursor: pointer;
+}
+
+.content_section.about .about_inner .reward button:hover {
+  background-color: #147b74;
+}
+
+.modal_snap .modal_header button {
+  cursor: pointer;
+}
+
+.modal_snap p {
+  font-size: 1rem;
+}
+
+.modal_snap .modal_inner {
+  position: relative;
+}
+
+.modal_snap .modal_inner .content_input span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.modal_snap .modal_inner .content_input span .text_lighter {
+  font-size: 1rem;
+  padding-left: 3em;
+  font-weight: bold;
+}
+
+.modal_snap .modal_inner .content_input span #pledge-left {
+  color: #147b74;
+  font-size: 1rem;
+  font-size: 1rem;
+  padding-left: 3em;
+  font-weight: bold;
+  font-weight: bold;
+}
+
+.modal_snap .modal_inner h4 {
+  width: auto;
+  position: absolute;
+  left: 90%;
+  top: -1.2em;
+  left: 31em;
+}
+
+.modal_snap .modal_inner h3 {
+  display: none;
+}
+
+.modal_snap .modal_inner .enter_pledge {
+  width: 90%;
+}
+
+.modal_snap .modal_inner .enter_pledge h3 {
+  display: block;
+  width: 60%;
+  text-align: left;
+}
+
+.modal_snap .modal_inner .enter_pledge label {
+  width: 20%;
+}
+
+.modal_snap .modal_inner .enter_pledge label span {
+  left: 1.5vw;
+}
+
+.modal_snap .modal_inner .enter_pledge label input[type="text"] {
+  width: 80%;
+}
+
+.modal_snap .modal_inner .enter_pledge button {
+  width: 20%;
+  cursor: pointer;
+}
+
+.modal_snap .modal_inner .enter_pledge button:hover {
+  background-color: #147b74;
+}
+
+.modal_snap .modal_inner.display_pledge h3 {
+  display: none;
+}
+
+.modal_snap .modal_inner.display_pledge .enter_pledge h3 {
+  display: block;
+}
+/*# sourceMappingURL=desktop.css.map */
